@@ -126,5 +126,19 @@ public class Task {
     public int hashCode() {
         return Objects.hashCode(id);
     }
+
+    @Override
+    public String toString() {
+        return "Task{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", duedate=" + duedate +
+                ", status=" + status +
+                ", priority=" + priority +
+                ", created=" + created +
+                ", updated=" + updated +
+                '}';
+    }
 }
 
