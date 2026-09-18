@@ -19,7 +19,7 @@ public record CreateTaskRequestDto(
         String description,
         @FutureOrPresent(message = ERROR_MESSAGE_DUEDATE_IN_FUTURE)
         @Nullable
-        LocalDate duedate,
+        LocalDate dueDate,
         @NotNull(message = ERROR_MESSAGE_PRIORITY_NOT_NULL)
         TaskPriority priority
 ) {
