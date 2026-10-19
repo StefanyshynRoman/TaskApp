@@ -59,4 +59,9 @@ public class TaskServiceImpl implements TaskService {
 
 
     }
+
+    @Override
+    public void deleteTask(UUID taskId) {
+        taskRepository.deleteById(taskId);
+    }
 }
